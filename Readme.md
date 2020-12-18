@@ -16,4 +16,4 @@ To execute the production jar, you only need to do:
 
     java -jar target/SeatCodeCode-1.0-jar-with-dependencies.jar "absolute/path/to/the/input/file.txt"
 
-from the folder `<root>/SeatCodeCode`. Note tat if you don't add a path you will execute the default example that is included in the PDF of the challenge.
+from the folder `<root>/SeatCodeCode`. Note that if you don't add a path you will execute the default example that is included in the PDF of the challenge.
