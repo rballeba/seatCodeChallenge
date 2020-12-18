@@ -11,15 +11,15 @@ class Problem(private val scenario: Scenario, private val robotsAndActions: List
         }
             robotsAndActions.forEach { validateRobotInitialPosition(it.first, scenario) }
     }
-    fun run() {
-        robotsAndActions.forEach { executeActionsInRobot(it.first, it.second) }
+    fun run(): List<String> {
+        return robotsAndActions.map { executeActionsInRobot(it.first, it.second) }
     }
 
-    private fun executeActionsInRobot(robot:Robot, actions: Queue<Action>) {
+    private fun executeActionsInRobot(robot:Robot, actions: Queue<Action>): String {
         while (!actions.isEmpty) {
             val actionToPerform = actions.dequeue()!!
             robot.executeAction(actionToPerform, scenario)
         }
-        println(robot)
+        return robot.toString()
     }
 }
