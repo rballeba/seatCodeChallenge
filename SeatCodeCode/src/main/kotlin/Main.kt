@@ -1,5 +1,3 @@
-package app
-
 import app.InputAdapters.adapt
 import java.io.File
 

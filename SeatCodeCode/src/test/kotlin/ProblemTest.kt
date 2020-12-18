@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 import java.lang.RuntimeException
 
 
-class ProblemTests {
+class ProblemTest {
     @Test fun `Happy path example works properly`() {
         val niceExampleFilepath = "./src/test/test-cases/1.txt"
         val problem = adapt(niceExampleFilepath)
